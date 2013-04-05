@@ -160,27 +160,19 @@
 
 		try
 			let char = s:GetChar()
-
-			" Check that we have an input char
-			if empty(char)
-				" Restore selection
-				if ! empty(a:visualmode)
-					silent exec 'normal! gv'
-				endif
-
-				return ''
-			endif
 		catch 
 			call s:Message(v:exception)
+		endtry
 
+		" Check that we have an input char
+		if empty(char)
 			" Restore selection
 			if ! empty(a:visualmode)
 				silent exec 'normal! gv'
 			endif
 
 			return ''
-		endtry
-
+		endif
 
 		return char
 	endfunction " }}}
