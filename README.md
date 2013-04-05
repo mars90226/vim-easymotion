@@ -8,15 +8,15 @@ jump directly to the target.
 When one of the available motions is triggered, all visible text
 preceding or following the cursor is faded, and motion targets are
 highlighted. (Customization by @laughinghan: instead of the 26 letters
-in alphabetical order, my motion targets are the homerow keys from left-
-to-right, then the same keys with Shift in reverse order, so even if you
-mistype you'll end up near your intended destination.)
+in alphabetical order, my motion targets are the homerow keys from
+left-to-right, then the same keys with Shift in reverse order, so even
+if you mistype you'll end up near your intended destination.)
 
 EasyMotion is triggered by one of the provided mappings.
 
 # Important notes about the default bindings
 
-**Note by @laughinghan: I've set <Space> as my default Leader key.**
+**Note by @laughinghan: I've set `<Space>` as my default Leader key.**
 
 **The default leader has been changed to `<Leader><Leader>` to avoid 
 conflicts with other plugins you may have installed.** This can easily be 
